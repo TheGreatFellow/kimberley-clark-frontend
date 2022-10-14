@@ -9,6 +9,7 @@ import Games from './screens/Games'
 import Wordle from './screens/Games/Wordle'
 import Crossword from './screens/Games/Crossword'
 import Collect from './screens/Games/Collect'
+import Profile from './screens/Profile'
 function App() {
     const [count, setCount] = useState(0)
 
@@ -19,6 +20,7 @@ function App() {
                     <Route path='/' element={<Landing />}></Route>
                     <Route path='/onboarding' element={<Onboarding />}></Route>
                     <Route path='/home' element={<Home />}></Route>
+                    <Route path='/profile' element={<Profile />}></Route>
                     <Route path='/games'>
                         <Route index element={<Games />} />
                         <Route path='wordle' element={<Wordle />} />

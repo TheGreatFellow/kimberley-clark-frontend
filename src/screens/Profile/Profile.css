@@ -1,0 +1,106 @@
+.profile-top-container {
+}
+
+.personal-details-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.profile-image {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+}
+
+.details-container {
+    padding-top: 15px;
+}
+.name {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+.username {
+    margin-bottom: 0.7rem;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+.bio {
+    color: #464646;
+    font-size: 1.1rem;
+}
+.seperator {
+    width: 70%;
+    height: 3px;
+    background-color: #d7e3e3;
+    margin: 0.7rem auto 1.2rem;
+}
+
+.stats-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.stats-card {
+    width: 40%;
+    height: 60px;
+    padding: 1rem 0.5rem 0 1rem;
+    border-radius: 1rem;
+    border: 2px solid #acb4b4;
+    display: flex;
+    margin-bottom: 5px;
+    /* flex-direction: column; */
+}
+
+.stats-text-container {
+    margin-left: 10px;
+}
+
+.statistics-value {
+    font-weight: 800;
+    margin-bottom: 3px;
+}
+
+.statistics-heading {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.logo {
+    color: gold;
+}
+
+.achievement-card {
+    display: flex;
+    align-items: center;
+}
+.achievement-icon-container {
+    /* width: 40%; */
+    flex: 3;
+}
+.achievement-icon {
+    width: 100%;
+}
+.achievement-text-container {
+    flex: 7;
+}
+
+.achievement-name {
+    font-weight: 800;
+}
+
+.achievement-description {
+    font-weight: 300;
+    font-size: 1.1rem;
+}
