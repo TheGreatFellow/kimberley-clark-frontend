@@ -1,22 +1,26 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import React, { useContext, useEffect, useState } from "react";
+import { UserContext } from "../../providers/UserProvider";
+import { useNavigate } from "react-router-dom";
+import { signInWithGoogle } from "../../services/firebase";
 
 const Landing = () => {
-    const navigate = useNavigate()
+  const navigate = useNavigate();
+  const user = useContext(UserContext);
 
-    const handleLogin = () => {
-        if (1 == 1) {
-            navigate('/onboarding')
-        }
+  useEffect(() => {
+    if (user) {
+      navigate("/login");
     }
-    return (
-        <>
-            <div>Landing(Will contain some intro about the site as well)</div>
-            <button className='login-button' onClick={() => handleLogin()}>
-                Login
-            </button>
-        </>
-    )
-}
+  }, [user, navigate]);
 
-export default Landing
+  return (
+    <>
+      <div>Landing(Will contain some intro about the site as well)</div>
+      <button className="login-button" onClick={signInWithGoogle}>
+        Login
+      </button>
+    </>
+  );
+};
+
+export default Landing;
