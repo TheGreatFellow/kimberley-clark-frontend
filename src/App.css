@@ -1,6 +1,30 @@
 .app-container {
-  margin: 0.4rem 1.2rem;
-  font-size: 1.2rem;
-  font-family: Nunito, sans-serif;
-  font-weight: 500;
+    margin: 0.4rem 1.2rem;
+    font-size: 1.2rem;
+    font-family: Nunito, sans-serif;
+    font-weight: 500;
+}
+
+.logoP {
+    font-size: 1.9rem;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 95vh;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.navigation-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
