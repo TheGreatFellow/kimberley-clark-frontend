@@ -7,7 +7,7 @@ import Onboarding from "./screens/Onboarding";
 import Quiz from "./screens/Quiz";
 import Games from "./screens/Games";
 import Wordle from "./screens/Games/Wordle";
-import Crossword from "./screens/Games/Crossword";
+import DiseaseDescription from "./screens/DiseaseDescription/DiseaseDescription";
 import Collect from "./screens/Games/Collect";
 import Profile from "./screens/Profile";
 import UserProvider from "./providers/UserProvider";
@@ -24,11 +24,11 @@ function App() {
             <Route path="/onboarding" element={<Onboarding />}></Route>
             <Route path="/home" element={<Home />}></Route>
             <Route path="/profile" element={<Profile />}></Route>
+            <Route path="collect" element={<Collect />} />
+            <Route path="diseaseDescription" element={<DiseaseDescription />} />
             <Route path="/games">
               <Route index element={<Games />} />
               <Route path="wordle" element={<Wordle />} />
-              <Route path="crossword" element={<Crossword />} />
-              <Route path="collect" element={<Collect />} />
             </Route>
             <Route path="/quiz" element={<Quiz />}></Route>
           </Routes>
