@@ -2,16 +2,23 @@ import React, { useContext, useEffect, useState } from "react";
 import { UserContext } from "../../providers/UserProvider";
 import { useNavigate } from "react-router-dom";
 import { signInWithGoogle } from "../../services/firebase";
+import { Navigate } from "react-router-dom";
 
 const Landing = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const user = useContext(UserContext);
+  const [redirect, setRedirect] = useState(null);
 
   useEffect(() => {
+    console.log(user);
     if (user) {
-      navigate("/login");
+      setRedirect("/home");
     }
-  }, [user, navigate]);
+  }, [user]);
+
+  if (redirect) {
+    return <Navigate to={redirect} />;
+  }
 
   return (
     <>

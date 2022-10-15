@@ -5,9 +5,10 @@ const UserProvider = (props) => {
   const [user, setuser] = useState(null);
   useEffect(() => {
     auth.onAuthStateChanged(async (user) => {
+      console.log(user);
       setuser(user);
     });
-  }, []);
+  }, [user]);
   return (
     <UserContext.Provider value={user}>{props.children}</UserContext.Provider>
   );

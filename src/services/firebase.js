@@ -1,5 +1,4 @@
 import firebase from "firebase/compat/app";
-import "firebase/compat/firestore";
 import "firebase/compat/auth";
 
 const firebaseConfig = {
@@ -14,28 +13,16 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 export const auth = firebase.auth();
-export const db = firebase.firestore();
 
 const googleProvider = new firebase.auth.GoogleAuthProvider();
 export const signInWithGoogle = () => {
   auth
     .signInWithPopup(googleProvider)
-    .then((res) => {
-      db.collection("employees")
-        .doc(res.user.uid)
-        .set({
-          name: res.user.displayName,
-          phone: res.user.phoneNumber,
-        })
-        .then(() => {
-          console.log("Successful");
-        })
-        .catch((error) => {
-          console.error("Error writing document: ", error);
-        });
+    .then((result) => {
+      console.log(result);
     })
     .catch((error) => {
-      console.log(error.message);
+      console.log(error);
     });
 };
 

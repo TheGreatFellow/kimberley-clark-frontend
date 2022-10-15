@@ -1,54 +1,6 @@
 .app-container {
-    margin: 0.4rem 1.2rem;
-    font-size: 1.2rem;
-    font-family: Nunito, sans-serif;
-    font-weight: 500;
-}
-
-.submit {
-    width: 100%;
-    padding: 1.2rem;
-    border-radius: 0.9rem;
-    background-color: #8fff3e;
-    color: #181127;
-    font-size: 1.3rem;
-    font-weight: 700;
-    border: none;
-    margin-top: 20px;
-    border: 2px solid #181127;
-    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
-    box-shadow: 4px 4px 0px #181127;
-}
-.submit:hover {
-    box-shadow: 0px 0px 0px #181127;
-}
-.submit:focus {
-    box-shadow: 0px 0px 0px #181127;
-}
-
-.option {
-    /* width: 100%; */
-    padding: 1rem;
-    border-radius: 0.9rem;
-    background-color: #d7e3e3;
-    color: #181127;
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin: 0 auto;
-    margin-top: 20px;
-    border: 2px solid #181127;
-    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
-    box-shadow: 4px 4px 0px #181127;
-}
-
-/* .option:hover {
-    box-shadow: 0px 0px 0px #181127;
-}
-.option:focus {
-    box-shadow: 0px 0px 0px #181127;
-} */
-.selected {
-    box-shadow: 4px 4px 0px #8fff3e;
-    border-color: #8fff3e;
-    background-color: #fff;
+  margin: 0.4rem 1.2rem;
+  font-size: 1.2rem;
+  font-family: Nunito, sans-serif;
+  font-weight: 500;
 }
