@@ -1,0 +1,55 @@
+.disease-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.disease-heading {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.disease-name {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.sub-heading {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.disease-description {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    align-content: center;
+}
+
+.product-image {
+    width: 100%;
+}
+
+a {
+    display: inline;
+    width: 45%;
+}
+
+.pname {
+    text-align: center;
+}

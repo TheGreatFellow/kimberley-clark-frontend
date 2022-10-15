@@ -11,15 +11,40 @@
 
 .home-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
     height: 95vh;
     width: 100%;
     margin-top: 20px;
     margin-bottom: 15px;
+    align-content: center;
 }
-
+.home-card {
+    width: 40%;
+    height: 200px;
+    padding: 10px;
+    border-radius: 1rem;
+    background-color: peachpuff;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: center;
+    text-align: center;
+}
+.home-img {
+    width: 100%;
+    object-fit: cover;
+    border-bottom: 1px solid rgb(90, 89, 89);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+.home-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
 .navigation-bar {
     display: flex;
     flex-direction: row;
@@ -27,4 +52,13 @@
     width: 100%;
     margin-top: 20px;
     margin-bottom: 15px;
+}
+
+.at {
+    text-decoration: none;
+    color: #181127;
+}
+
+.links {
+    width: 80%;
 }

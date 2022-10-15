@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
     let height = window.innerHeight
@@ -6,11 +7,34 @@ const Home = () => {
     return (
         <>
             <div className='home-container'>
-                <div className='navigation-bar'>
-                    <i class='fa-solid fa-lightbulb logoP'></i>
-                    <i class='fa-solid fa-w logoP'></i>
-                    <i class='fa-solid fa-user logoP'></i>
-                </div>
+                <Link className='home-card' to='/collect'>
+                    <img
+                        src='https://img.icons8.com/doodle/192/000000/sleeping-baby--v1.png'
+                        className='home-img'
+                    />
+                    <p className='home-title'>Know your baby's skin</p>
+                </Link>
+                <Link className='home-card' to='/quiz'>
+                    <img
+                        src='https://img.icons8.com/plasticine/200/000000/the-legend-of-zelda-skyward-sword.png'
+                        className='home-img'
+                    />
+                    <p className='home-title'>Couple wars</p>
+                </Link>
+                <Link className='home-card' to='/games/wordle'>
+                    <img
+                        src='https://img.icons8.com/doodle/192/000000/nintendo-switch-pro-controller.png'
+                        className='home-img'
+                    />
+                    <p className='home-title'>Chill zone</p>
+                </Link>
+                <Link className='home-card' to='/profile'>
+                    <img
+                        src='https://img.icons8.com/doodle/96/000000/laurel-wreath.png'
+                        className='home-img'
+                    />
+                    <p className='home-title'>Achievements</p>
+                </Link>
             </div>
         </>
     )
