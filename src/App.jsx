@@ -30,7 +30,18 @@ function App() {
               <Route index element={<Games />} />
               <Route path="wordle" element={<Wordle />} />
             </Route>
-            <Route path="/quiz" element={<Quiz />}></Route>
+            <Route
+              path="/quiz/creator"
+              element={
+                <Quiz roomId="PJSxZapRYaGEinJLY32L" playerType="creator" />
+              }
+            ></Route>
+            <Route
+              path="/quiz/partner"
+              element={
+                <Quiz roomId="PJSxZapRYaGEinJLY32L" playerType="partner" />
+              }
+            ></Route>
           </Routes>
         </Router>
       </UserProvider>
