@@ -3,6 +3,14 @@ import './Quiz.css'
 const Quiz = () => {
     return (
         <div className='quiz-container'>
+            <img
+                src='https://img.icons8.com/color/250/000000/cloud.png'
+                className='cloud'
+            />
+            <img
+                src='https://img.icons8.com/fluency/250/000000/sun.png'
+                className='sun rotating'
+            />
             <div className='quiz-top-container'>
                 <div className='quiz-header'>
                     <i className='fa-solid fa-xmark close'></i>

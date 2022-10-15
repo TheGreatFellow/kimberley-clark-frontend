@@ -25,7 +25,7 @@ const Onboarding = () => {
                     </div>
                 </div>
             </div>
-            <Link to='/home'>
+            <Link to='/collect'>
                 <button className='submit'>Submit</button>
             </Link>
         </div>

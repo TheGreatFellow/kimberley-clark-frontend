@@ -21,11 +21,11 @@ function App() {
                     <Route path='/onboarding' element={<Onboarding />}></Route>
                     <Route path='/home' element={<Home />}></Route>
                     <Route path='/profile' element={<Profile />}></Route>
+                    <Route path='collect' element={<Collect />}></Route>
                     <Route path='/games'>
                         <Route index element={<Games />} />
                         <Route path='wordle' element={<Wordle />} />
                         <Route path='crossword' element={<Crossword />} />
-                        <Route path='collect' element={<Collect />} />
                     </Route>
                     <Route path='/quiz' element={<Quiz />}></Route>
                 </Routes>
