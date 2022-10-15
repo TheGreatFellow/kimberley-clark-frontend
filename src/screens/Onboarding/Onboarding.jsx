@@ -23,39 +23,35 @@ const Onboarding = () => {
               </div>
             </div>
           </div>
-          <Link to="/collect">
-            <button className="submit">Submit</button>
-          </Link>
         </div>
       </div>
-      <Link to="/home">
-        <button
-          className="submit"
-          onClick={() => {
-            fetch("http://localhost:3000/postUserProfile", {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify({
-                uid: "123",
-                name: "test",
-                username: "test",
-                age: "test",
-                firstTimeParent: "test",
-                motherOrFather: "test",
-                partnerUsername: "test",
-                genderOfBaby: "test",
-                ageOfBaby: "test",
-              }),
-            }).then((data) => {
-              console.log(data);
-            });
-          }}
-        >
-          Submit
-        </button>
-      </Link>
+
+      <button
+        className="submit"
+        onClick={() => {
+          fetch("http://localhost:3000/postUserProfile", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              uid: "123",
+              name: "test",
+              username: "test",
+              age: "test",
+              firstTimeParent: "test",
+              motherOrFather: "test",
+              partnerUsername: "test",
+              genderOfBaby: "test",
+              ageOfBaby: "test",
+            }),
+          }).then((data) => {
+            console.log(data);
+          });
+        }}
+      >
+        Submit
+      </button>
     </div>
   );
 };
