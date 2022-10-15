@@ -12,7 +12,12 @@ const Home = () => {
                         src='https://img.icons8.com/doodle/192/000000/sleeping-baby--v1.png'
                         className='home-img'
                     />
-                    <p className='home-title'>Know your baby's skin</p>
+                    <p
+                        className='home-title'
+                        style={{ textDecoration: 'none' }}
+                    >
+                        Know your baby's skin
+                    </p>
                 </Link>
                 <Link className='home-card' to='/quiz'>
                     <img
